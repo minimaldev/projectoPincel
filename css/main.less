@@ -1,0 +1,180 @@
+/*main.less*/
+@import "mixins/mixins.less";
+
+@blue: #27aae1;
+@font_color_simple: #757575;
+@gray: #f7f7f7;
+@green: #78ae0e;
+@dark_green: #5e8c04;
+@font_color: #000;
+@wite_color: #fff;
+@background_color: #d2d1d0;
+@padding_margin_standar:  0.625em;
+@font_size_title:  1.125em;
+@screen-xs-min: 767px;
+@screen-sm-min: 768px;
+@screen-sm-max: 921px;
+@screen-md-min: 922px;
+@screen-md-max: 1199px;
+@screen-lg-min: 1200px;
+
+	.clearfix:after 
+	{
+	  content: ".";
+	  display: block;
+	  clear: both;
+	  visibility: hidden;
+	  line-height: 0;
+	  height: 0;
+	}
+	 
+	.clearfix 
+	{
+	  display: block;
+	}
+	 
+	html[xmlns] .clearfix 
+	{
+	  display: block;
+	}
+	 
+	* html .clearfix 
+	{
+	  height: 1%;
+	}
+	.divider-vertical 
+	{
+
+	}
+	.divider-vertical:after { content: '|'; }
+
+	.nav-inline
+	{
+		display: inline;
+		padding: 0px;
+		margin: 0px;
+		li
+		{
+			display: inline-block;
+			padding: 0.500em 0px;
+			margin: 0px;
+			a
+			{	
+				display: block;
+				color: @wite_color;
+				padding: 0.313em 0.500em;
+			}
+		}
+		li a:hover
+		{
+			background: none;
+			text-decoration: underline;
+		}
+	}
+	body
+	{
+		background: @wite_color;
+
+		a
+		{
+			text-decoration: none;
+		}
+		.slider
+		{
+			background: @gray;
+		}
+
+		.center
+		{
+			text-align: center;	
+		}
+
+		#register-form
+		{
+			width: 23%;
+			display: block;
+			margin: 0 auto;
+			
+			label
+			{
+				margin-right: 5px;
+			}
+			
+			button[type=submit]
+			{
+				background: @green;
+				.make-box-shadow(-1px 2px 0px 0px rgba(94, 140, 4, 1));
+				display: block;
+				color: @wite_color;
+				padding: @padding_margin_standar;
+				.make-rounded-radius;
+				border: 0px;
+				width: 100%;
+			}
+
+			div.item
+			{
+				display: block;
+				padding: @padding_margin_standar;
+				.make-rounded-radius;
+				margin-bottom: @padding_margin_standar;
+
+				background: @gray;
+				font-size: 1em;
+				input
+				{
+					display: inline-block;
+					border: 0px;
+					background: @gray;
+				}
+			}
+
+		}
+
+		.width100
+		{			
+			li
+			{
+				width: 33%;
+			}
+		}
+
+		.btn
+		{
+			display: inline-block;
+			padding: @padding_margin_standar;
+			color: @wite_color;
+			.make-rounded-radius;
+			text-align: center;
+			text-transform: capitalize;
+		}
+
+
+
+		.btn-blue
+		{
+			background: @blue;
+		}
+
+		.margin-top
+		{
+			margin-top: @padding_margin_standar;
+		}
+
+		.pull-right
+		{
+			float: right;
+		}
+
+		.container
+		{
+			width: 980px;
+			margin: 0 auto;
+		}
+
+	}
+
+
+
+@media (min-width: @screen-sm-min){
+}

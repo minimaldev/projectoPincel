@@ -1,0 +1,20 @@
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.clearfix{display:block;}
+html[xmlns] .clearfix{display:block;}
+* html .clearfix{height:1%;}
+.divider-vertical:after{content:'|';}
+.nav-inline{display:inline;padding:0px;margin:0px;}.nav-inline li{display:inline-block;padding:0.500em 0px;margin:0px;}.nav-inline li a{display:block;color:#ffffff;padding:0.313em 0.500em;}
+.nav-inline li a:hover{background:none;text-decoration:underline;}
+body{background:#ffffff;}body a{text-decoration:none;}
+body .slider{background:#f7f7f7;}
+body .center{text-align:center;}
+body #register-form{width:23%;display:block;margin:0 auto;}body #register-form label{margin-right:5px;}
+body #register-form button[type=submit]{background:#78ae0e;-webkit-box-shadow:-1px 2px 0px 0px #5e8c04;-moz-box-shadow:-1px 2px 0px 0px #5e8c04;box-shadow:-1px 2px 0px 0px #5e8c04;display:block;color:#ffffff;padding:0.625em;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border:0px;width:100%;}
+body #register-form div.item{display:block;padding:0.625em;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin-bottom:0.625em;background:#f7f7f7;font-size:1em;}body #register-form div.item input{display:inline-block;border:0px;background:#f7f7f7;}
+body .width100 li{width:33%;}
+body .btn{display:inline-block;padding:0.625em;color:#ffffff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;text-align:center;text-transform:capitalize;}
+body .btn-blue{background:#27aae1;}
+body .margin-top{margin-top:0.625em;}
+body .pull-right{float:right;}
+body .container{width:980px;margin:0 auto;}
+@media (min-width:768px){}
