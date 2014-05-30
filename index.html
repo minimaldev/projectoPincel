@@ -1,93 +1,95 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Brush Change</title>
-    <meta name="description" content="">
-    <!-- CSS -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- END CSS -->    
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/btn-facebook.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
-
   </head>
   <body>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div id="contenedor1">
+      <div id="header">
+        <img src="img/logo.png" id="logo">
+        <div id="login-btn">
+          <p>Login</p>
+        </div>
+      </div>
+    </div>
+    <div id="intro">
+      <div id="imagenes">
+        <img src="img/your-project.png" alt="Your Project">
+        <img src="img/the_market.png" alt="The Market">
+        <img src="img/meets.png" alt="Meets">
+      </div>
+      <div id="desc">
+        <div class="text">
+          <h1>Your Project</h1>
+          <p>Gather some basic information about your painting project.</p>
+        </div>
+        <div class="text">
+          <h1>The Market</h1>
+          <p>We will take it from here. Painters will complete for your project and you pick the winner.</p>
+        </div>
+        <div class="text">
+          <h1>Your Projects</h1>
+          <p>After you tell us the details behind your project, we will price it and submit it to the BrushExchange.</p>
+        </div>
+      </div>
+    </div>
+    <div id="contenedor2">
+      <h2>Submit your project!!!</h2>
+      <button id="btn-face" class="btn btn-facebook"><i class="fa fa-facebook"></i> Register with Facebook</button>
+      <p id="arrow"><i class="fa fa-arrows-v"></i></p>
+      <form>
+        <table>
+          <tr>
+            <td><i class="fa fa-envelope fo-icon"></i><input type="email" class="form-control" id="email" placeholder="Enter email"></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-user fo-icon"></i><input type="text" class="form-control" id="user" placeholder="Username"></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-lock fo-icon"></i><input type="password" class="form-control" id="password" placeholder="Password"></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-lock fo-icon"></i><input type="password" class="form-control" id="password-rep" placeholder="Password Repeat"></td>
+          </tr>
+          <tr>
+            <td class="select"><i class="fa fa-circle" id="red-c"></i> Painter</td>
+            <td class="select"><i class="fa fa-circle" id="blue-c"></i> Customer</td>
+          </tr>
+          <tr>
+            <td id="register"><button type="button" id="btn-register">Register</button></td>
+          </tr>
+        </table>
+      </form>
+      <h6>When you register, acepts the <a href="#">Terms and conditions</a> and the <a href="#">Privacy Polices</a></h6>
+      <footer>
+        <p>
+          <a href="#">Home</a> |
+          <a href="#">About</a> |
+          <a href="#">Contact</a>
+        </p>
+      </footer>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <div class="container">
-      <div class="clearfix">
-       <header>
-        <a href="#"><img alt="brushexchanger" src="images/logo.png"></a>
-        <a class="btn btn-medium btn-blue pull-right margin-top" href="#">login</a>
-      </header>       
-      </div>
-    </div>
-  <div class="slider">
-    <div class="container">
-  
-      <div class="clearfix">
-
-       <ul class="nav-inline width100">
-          <li>
-            <img src="images/your-project.png" />
-            <h3>Your Project</h3>
-            <p>Gather some basic information about your painting project.</p>
-          </li>
-          <li>
-            <img src="images/meets.png" />
-            <h3>Meets</h3>
-            <p>After you tell us the details behind your project, we will price it and submit it to the BrushExchange.</p>
-          </li>
-          <li>
-            <img src="images/the_market.png" />
-            <h3>the market</h3>
-            <p>We will take it from here. Painters will compete for your project and you pick the winner.</p>
-          </li>
-       </ul>
-      </div>
-    </div>
-  </div>  
-  <div class="container">  
-    <div class="clearfix">
-       <form id="register-form" class="" ation="#" method="POST">
-        <h3>Submit your Project</h3>
-        <div class="item">
-          <i class="fa fa-envelope"></i> 
-          <input type="email" name="email" placeholder="Email Address" />
-        </div>
-        <div class="item">
-          <i class="fa fa-user"></i>
-          <input type="text" name="username" placeholder="Username" />
-        </div>         
-        <div class="item">
-          <i class="fa fa-lock"></i>
-          <input type="password" name="password" placeholder="Password" />
-        </div>                  
-        <div class="item">
-          <i class="fa fa-lock"></i>
-          <input type="password" name="repeat-password" placeholder="Repeat Password"/>
-        </div>                
-        <div class="center">
-            <input type="radio" name="customertype" value="patner"><label>Patner</label>
-            <input type="radio" name="customertype" value="customer"><label>Customer</label>
-        </div>
-        <div>
-          <button type="submit">REGISTER</button>
-        </div>
-       </form>
-    </div>
-  </div>        
-
-   
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
